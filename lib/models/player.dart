@@ -1,6 +1,13 @@
 class Player {
-  String name;
+  final String symbol;
+  final String name;
   int score;
 
-  Player({required this.name, this.score = 0});
+  Player({
+    required this.symbol,
+    required this.name,
+    this.score = 0,
+  });
+
+  void incrementScore() => score++;
 }

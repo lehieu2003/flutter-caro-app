@@ -49,7 +49,7 @@ class ScoreBoard extends StatelessWidget {
                   : 'Winner: ${gameState.winner}',
           style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         ),
-        if (gameState.winner != null)
+        if (gameState.winner != null && gameState.winner != 'Draw')
           ElevatedButton(
             onPressed: gameState.resetGame,
             child: const Text('Play Again'),
